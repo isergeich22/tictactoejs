@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicTacToe Game</title>
+</head>
+<body>
+    <header class="header">
+        <h1>TicTacToe - Game</h1>
+    </header>
+    <div class="type">
+        <button id="pvp" class="btn-type">Player vs Player</button>
+        <button id="pve" class="btn-type">Player vs Computer</button>
+    </div>
+    <h3>Choose your side</h3>
+    <div class="choice">        
+        <button class="cross" id="cross">X</button>
+        <div class="turn"></div>
+        <button class="circle" id="circle">O</button>
+    </div>
+    <section class="game">
+        <button class="field disabled" hPos="0" vPos="0" disabled="true"></button>
+        <button class="field disabled" hPos="0" vPos="1" disabled="true"></button>
+        <button class="field disabled" hPos="0" vPos="2" disabled="true"></button>
+        
+        <button class="field disabled" hPos="1" vPos="0" disabled="true"></button>
+        <button class="field disabled" hPos="1" vPos="1" disabled="true"></button>
+        <button class="field disabled" hPos="1" vPos="2" disabled="true"></button>
+        
+        <button class="field disabled" hPos="2" vPos="0" disabled="true"></button>
+        <button class="field disabled" hPos="2" vPos="1" disabled="true"></button>
+        <button class="field disabled" hPos="2" vPos="2" disabled="true"></button>
+    </section>
+    <button class="reset">RESET GAME</button>
+    <script src="game.js"></script>
+</body>
+</html>

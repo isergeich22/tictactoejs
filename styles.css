@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 30px 0;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+    .type .btn-type {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 1.2rem;
+        border: 2px solid #000;
+        width: 50%;
+        margin: 1%;
+        background: #fff;
+        height: 70px;
+        border-radius: 5px;
+        transition: .5s ease-in;
+    }
+
+    .type .btn-type:hover {
+        border: none;
+        background: #000;
+        color: #fff;
+        transition: .5s ease-in;
+    }
+
+h3 {
+    display: none;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.choice {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 50px 0;
+}
+
+    .choice .turn {
+        display: none;
+        font-size: 3rem;
+    }
+
+    .choice button {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 2.5rem;
+        background: #fff;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #000;
+        transition: .5s ease-in;
+    }
+
+    .choice .cross {
+        border-radius: 5px;
+    }
+
+    .choice .circle {
+        border-radius: 50%;
+    }
+
+    .choice .cross:hover, .choice .circle:hover {
+        border: none;
+        background: #000;
+        color: #fff;
+        transition: .5s ease-in;
+    }
+
+.game {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 2.5%;
+    margin: 0 auto;
+    width: 510px;
+}
+
+    .field {
+        font-size: 7rem;
+        font-family: 'Chakra Petch', sans-serif;
+        width: 150px;
+        height: 150px;
+        background: #000;
+        color: #fff;
+    }
+
+        .disabled {
+            background: rgb(167, 167, 167) !important;
+            border: none !important;
+        }
+
+.reset {
+    width: 150px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    background: #fff;
+    border: 2px solid #000;
+    margin: 20px auto;
+    transition: .5s ease-in;
+    display: none;
+    border-radius: 3px;
+}
+
+.reset:hover {
+    border: none;
+    background: #000;
+    color: #fff;
+    transition: .5s ease-in;
+}
+
+@media (max-width: 767px) {
+
+    .choice .turn {
+        font-size: 1.5rem;
+    }
+
+    .game {
+        width: 310px;
+    }
+
+        .field {
+            font-size: 4rem;
+            width: 91px;
+            height: 91px;
+        }
+}
