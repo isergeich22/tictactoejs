@@ -235,6 +235,7 @@ function step(sign) {
     if(freeFields.length > 0) {
         let field = freeFields[getRandomInt(0, freeFields.length)]
         field.innerHTML = sign
+        field.disabled = true
         sign == 'X' ? array[field.getAttribute('hpos')][field.getAttribute('vpos')] = 1 :array[field.getAttribute('hpos')][field.getAttribute('vpos')] = -1
         count++
         sign == 'X' ? turn.innerHTML = 'O - turn' : turn.innerHTML = 'X - turn'
